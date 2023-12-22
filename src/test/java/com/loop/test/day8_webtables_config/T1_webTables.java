@@ -26,7 +26,7 @@ public class T1_webTables extends TestBase {
     @Test
     public void testWebTables() throws InterruptedException {
 
-        DocuportUtils.login(driver, DocuportConstants.ADVISOR);
+        DocuportUtils.login(DocuportConstants.ADVISOR);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         WebElement users = driver.findElement(By.xpath("//a[@href='/users']"));
         users.click();
@@ -44,7 +44,7 @@ public class T1_webTables extends TestBase {
     @Test
     public void testUser() throws InterruptedException {
 
-        DocuportUtils.login(driver, "advisor");
+        DocuportUtils.login("advisor");
 
 
 
