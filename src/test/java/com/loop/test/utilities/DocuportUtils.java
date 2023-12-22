@@ -63,7 +63,7 @@ public class DocuportUtils {
      * @param driver
      * @author eyadq
      */
-    public static void logout(WebDriver driver){
+    public static void logOut(WebDriver driver){
         WebElement userIcon = driver.findElement(By.xpath("//div[@class='v-avatar primary']"));
 
         userIcon.click();
